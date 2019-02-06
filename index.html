@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey</title>
+</head>
+<body>
+  <h1 id="title">Cat Owners Survey</h1>
+  <div id="form-container">
+    <div id="form-wrapper">
+      <p id="description" tabindex="0">We are conducting this survey to get to know you and your furry friend. Let's get started!</p>
+      <form id="survey-form" action="" method="post">
+
+        <div class="block">
+          <label id="name-label" for="name">Name:</label>
+          <input id="name" type="text" name="name" placeholder="Enter your name" required spellcheck="false">
+        </div>
+
+        <div class="block">
+          <label id="email-label" for="email">Email:</label>
+          <input id="email" type="email" name="email" placeholder="Enter your email" required spellcheck="false">
+        </div>
+
+        <div class="block">
+          <label id="number-label" for="number">Age:</label>
+          <input id="number" type="number" name="age" placeholder="Enter your age" min="1" max="120" required>
+        </div>
+
+        <div class="block1">
+          <label for="dropdown">How many cats do you have?</label>
+          <select id="dropdown" name="cats-count">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5+">5+</option>
+          </select>
+        </div>
+
+        <div class="block2">
+          <label for="dropdown1">How often do you talk to your beloved pet?</label>
+          <select id="dropdown1" name="talking">
+            <option value="daily">daily</option>
+            <option value="weekly">weekly</option>
+            <option value="monthly">monthly</option>
+            <option value="bi-monthly">bi-monthly</option>
+            <option value="a few times a year">a few times a year</option>
+            <option value="never">never</option>
+          </select>
+        </div>
+
+        <div class="block2">
+          <label for="dropdown2">How often do you take pictures of your cat?</label>
+          <select id="dropdown2" name="pictures">
+            <option value="daily">daily</option>
+            <option value="weekly">weekly</option>
+            <option value="monthly">monthly</option>
+            <option value="bi-monthly">bi-monthly</option>
+            <option value="a few times a year">a few times a year</option>
+            <option value="never">never</option>
+          </select>
+        </div>
+
+        <div class="radio-group">
+          <label class="radio-main">Do you purchase clothing or fashion accessories for your pet?</label>
+          <input id="clothing-accessories-yes" type="radio" name="clothing-accessories" value="yes">
+          <label class="radio" for="clothing-accessories-yes">yes</label>
+          <input id="clothing-accessories-no" type="radio" name="clothing-accessories" value="no">
+          <label class="radio" for="clothing-accessories-no">no</label>
+        </div>
+
+        <div class="radio-group">
+          <label class="radio-main">Do you celebrate your pet’s birthday?</label>
+          <input id="celebrate-birthday-yes" type="radio" name="celebrate-birthday" value="yes">
+          <label class="radio" for="celebrate-birthday-yes">yes</label>
+          <input id="celebrate-birthday-no" type="radio" name="celebrate-birthday" value="no">
+          <label class="radio" for="celebrate-birthday-no">no</label>
+        </div>
+
+        <div class="radio-group">
+          <label class="radio-main">Do you have a social media account for your cat?</label>
+          <input id="social-media-account-yes" type="radio" name="social-media-account" value="yes">
+          <label class="radio" for="social-media-account-yes">yes</label>
+          <input id="social-media-account-no" type="radio" name="social-media-account" value="no">
+          <label class="radio" for="social-media-account-no">no</label>
+        </div>
+
+        <div class="checkbox-group">
+          <label class="checkbox-main">What type of food do you feed your cat?</label>
+          <input id="pet-store-brand" type="checkbox" name="food1" value="pet-store-brand">
+          <label class="checkbox" for="pet-store-brand">pet store brand</label>
+
+          <input id="supermarket-brand" type="checkbox" name="food2" value="supermarket-brand">
+          <label class="checkbox" for="supermarket-brand">supermarket brand</label>
+
+          <input id="vet-brand" type="checkbox" name="food3" value="vet-brand">
+          <label class="checkbox" for="vet-brand">vet brand</label>
+
+          <input id="homemade-pet-food" type="checkbox" name="food4" value="homemade-pet-food">
+          <label class="checkbox" for="homemade-pet-food">homemade pet food</label>
+
+          <input id="other" type="checkbox" name="food5" value="other">
+          <label class="checkbox" for="other">other</label>
+        </div>
+
+        <div class="textarea">
+          <label for="funny-stories">What are some funny stories about your pet?</label>
+          <textarea name="funny-stories" id="funny-stories" spellcheck="false"></textarea>
+        </div>
+
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <p class="attribution">Icons from <a href="https://www.flaticon.com/">www.flaticon.com<a></p>
+</body>
+</html>
